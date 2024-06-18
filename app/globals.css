@@ -6,13 +6,23 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --text-secondary: 69, 69, 69;
+  --bg-darken-blue: 20,69, 100;
+  --bg-darken-blue-hover: 37,119,185;
+  --bg-darken-blue-selected: 37,119,185;
+  --bg-disabled: 144,144,144;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 11,56,102;
+    --background-end-rgb: 149,249,195;
+    --text-secondary: 69, 69, 69;
+    --bg-darken-blue: 20,69, 100;
+    --bg-darken-blue-hover: 37,119,185;
+    --bg-darken-blue-selected: 37,119,185;
+    --bg-disabled: 144,144,144;
   }
 }
 
@@ -24,6 +34,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    height: 100vh;
 }
 
 @layer utilities {
