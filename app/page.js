@@ -1,14 +1,9 @@
-
+"use client"
 
 import Image from "next/image";
 import ResponsiveAppBar from "./components/navbar";
 import { Card } from "@mui/material";
 import Link from "next/link";
-
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
-
-
 
 export default function Home() {
 

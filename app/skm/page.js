@@ -14,7 +14,7 @@ import { useOptionStore } from '../hooks/useOptionStore';
 export default function SurveyPage() {
   const [surveyIndex, setSurveyIndex] = useState(0);
   const { questionText, options } = surveyQuestions[surveyIndex];
-  const [selectedOptions, setSelectedOption] = useOptionStore()
+  const {selectedOptions, setSelectedOptions} = useOptionStore()
   const allQuestionsAnswered = Object.keys(selectedOptions).length === surveyQuestions.length;
   console.log(selectedOptions)
   const handleNavigateButton = (type) => {
@@ -26,7 +26,7 @@ export default function SurveyPage() {
   };
 
   const handleChangeAnswer = (option) => {
-    setSelectedOption(surveyIndex, option);
+    setSelectedOptions(surveyIndex, option);
   };
 
   const handleSubmitSurvey = () => {
